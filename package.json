@@ -2,9 +2,11 @@
   "name": "nova-table",
   "version": "1.0.0",
   "description": "a plugin that does row reorder, row collapse and add/delete row feature",
-  "main": "index.js",
+  "main": "./src/index.js",
+  "homepage": "https://github.com/leandroruel/nova-table#readme",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "exit 1"
   },
   "keywords": [
     "table",
@@ -19,9 +21,27 @@
     "delete",
     "row"
   ],
-  "author": "Leandro ruel",
+  "author": "Leandro ruel <leandro.ruel@gmail.com> (https://github.com/leandroruel)",
   "license": "MIT",
   "devDependencies": {
-    "webpack": "^4.39.1"
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "autoprefixer": "^9.6.1",
+    "babel-eslint": "^10.0.2",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.1.0",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "file-loader": "^4.1.0",
+    "fs-extra": "^8.1.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "http-server": "^0.11.1",
+    "style-loader": "^0.23.1",
+    "url-loader": "^2.1.0",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2",
+    "webpack-merge": "^4.2.1"
   }
 }
