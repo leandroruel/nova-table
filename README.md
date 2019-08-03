@@ -1,6 +1,6 @@
 # Nova Table
 
-Nova Table is a plugin to add and delete rows, row reorder with drag and drop, collapsible rows and customizable options to make your work with tables more easy, this does not replace the great datatables plugin, this is just to specific user cases.
+Nova Table is a plugin for delete and add rows, row reordering with drag and drop, collapsible rows and more customizable options to make your work with tables more easy, this does not replace the great datatables plugin, this is just to specific user cases.
 
 ## Installation
 
