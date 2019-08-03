@@ -1,0 +1,27 @@
+{
+  "name": "nova-table",
+  "version": "1.0.0",
+  "description": "a plugin that does row reorder, row collapse and add/delete row feature",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "table",
+    "row",
+    "reorder",
+    "drag",
+    "and",
+    "drop",
+    "rows",
+    "add",
+    "and",
+    "delete",
+    "row"
+  ],
+  "author": "Leandro ruel",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.39.1"
+  }
+}
