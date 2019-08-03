@@ -1,4 +1,4 @@
-# Nova Table
+# Nova Table [![Build Status](https://travis-ci.org/leandroruel/nova-table.svg?branch=master)](https://travis-ci.org/leandroruel/nova-table)
 
 Nova Table is a plugin for delete and add rows, row reordering with drag and drop, collapsible rows and more customizable options to make your work with tables more easy, this does not replace the great datatables plugin, this is just to specific user cases.
 
