@@ -1,52 +1,67 @@
 {
-  "name": "nova-table",
-  "version": "1.0.0",
-  "description": "a plugin that does row reorder, row collapse and add/delete row feature",
-  "main": "./src/index.js",
-  "homepage": "https://github.com/leandroruel/nova-table#readme",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node ./config/dev"
-  },
-  "keywords": [
-    "table",
-    "row",
-    "reorder",
-    "drag",
-    "and",
-    "drop",
-    "rows",
-    "add",
-    "and",
-    "delete",
-    "row"
-  ],
-  "author": "Leandro ruel <leandro.ruel@gmail.com> (https://github.com/leandroruel)",
-  "license": "MIT",
-  "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "@babel/plugin-transform-runtime": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "@babel/preset-flow": "^7.0.0",
-    "@babel/runtime": "^7.5.5",
-    "autoprefixer": "^9.6.1",
-    "babel-eslint": "^10.0.2",
-    "babel-loader": "^8.0.6",
-    "chalk": "^2.4.2",
-    "css-loader": "^3.1.0",
-    "eslint": "^6.1.0",
-    "eslint-config-airbnb-base": "^13.2.0",
-    "file-loader": "^4.1.0",
-    "fs-extra": "^8.1.0",
-    "html-loader": "^0.5.5",
-    "html-webpack-plugin": "^3.2.0",
-    "http-server": "^0.11.1",
-    "open": "^6.4.0",
-    "style-loader": "^0.23.1",
-    "url-loader": "^2.1.0",
-    "webpack": "^4.39.1",
-    "webpack-cli": "^3.3.6",
-    "webpack-dev-server": "^3.7.2",
-    "webpack-merge": "^4.2.1"
-  }
+    "name": "@leandroruel/nova-table",
+    "description": "a plugin that does row reorder, row collapse and add/delete row feature",
+    "version": "1.0.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/leandroruel/nova-table"
+    },
+    "main": "index.js",
+    "keywords": [
+      "table",
+      "row",
+      "reorder",
+      "drag",
+      "and",
+      "drop",
+      "rows",
+      "add",
+      "and",
+      "delete",
+      "row"
+    ],
+    "author": {
+        "name": "leandro ruel",
+        "email": "leandro.ruel@gmail.com"
+    },
+    "license": "MIT",
+    "dependencies": {
+    },
+    "scripts": {
+        "build": "webpack --env dev && webpack --env build && npm run test",
+        "dev": "webpack --progress --colors --watch --env dev",
+        "test": "mocha --require @babel/register --colors ./test/*.spec.js",
+        "test:watch": "mocha --require @babel/register --colors -w ./test/*.spec.js",
+        "test:cover": "cross-env NODE_ENV=test nyc mocha --require @babel/register --colors test/*.js",
+        "repl": "node -i -e \"$(< ./lib/webpack-library-starter.js)\""
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.6.0",
+        "@babel/core": "^7.6.0",
+        "@babel/preset-env": "^7.6.0",
+        "@babel/register": "^7.6.0",
+        "babel-eslint": "^10.0.3",
+        "babel-loader": "^8.0.6",
+        "babel-plugin-add-module-exports": "^1.0.2",
+        "babel-plugin-istanbul": "^5.2.0",
+        "babel-preset-env": "^1.7.0",
+        "chai": "^4.2.0",
+        "cross-env": "^5.2.1",
+        "eslint": "^6.4.0",
+        "eslint-loader": "^3.0.0",
+        "html-loader": "^0.5.5",
+        "html-webpack-plugin": "^3.2.0",
+        "jsdom": "^15.1.1",
+        "jsdom-global": "^3.0.2",
+        "mocha": "^6.2.0",
+        "nyc": "^14.1.1",
+        "uglifyjs-webpack-plugin": "^2.2.0",
+        "webpack": "^4.40.2",
+        "webpack-cli": "^3.3.8",
+        "webpack-dev-server": "^3.8.0"
+    },
+    "nyc": {
+        "sourceMap": false,
+        "instrument": false
+    }
 }
